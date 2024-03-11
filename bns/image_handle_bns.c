@@ -6,7 +6,7 @@
 /*   By: schamizo <schamizo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 11:57:24 by schamizo          #+#    #+#             */
-/*   Updated: 2024/03/05 14:41:42 by schamizo         ###   ########.fr       */
+/*   Updated: 2024/03/11 12:38:52 by schamizo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ void	build_map(t_game *game)
 	while (j < game->size.y)
 	{
 		i = 0;
-		while (game->matrix[j][i] != '\n')
+		while (game->matrix[j][i] != '\n' && game->matrix[j][i] != '\0')
 		{
 			pos.x = i;
 			pos.y = j;
